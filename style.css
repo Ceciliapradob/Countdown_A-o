@@ -1,68 +1,72 @@
 /* Estilo general de la página */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
-    color: #fff;
-    text-align: center;
+    margin: 0; /* Elimina el margen predeterminado del navegador */
+    font-family: 'Arial', sans-serif; /* Establece la fuente de texto principal */
+    display: flex; /* Activa el diseño flexbox para organizar los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100vh; /* Hace que el cuerpo ocupe toda la altura de la ventana */
+    background: linear-gradient(135deg, #1f1c2c, #928dab); /* Aplica un degradado 
+    de fondo con dos colores */
+    color: #fff; /* Establece el color del texto en blanco */
+    text-align: center; /* Centra el texto dentro de los elementos */
 }
 
 /* Contenedor principal del countdown */
 .countdown-container {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente en negro */
+    border-radius: 15px; /* Redondea las esquinas del contenedor */
+    padding: 30px; /* Agrega espacio interno alrededor del contenido */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Agrega una sombra para dar 
+    un efecto de profundidad */
 }
 
 /* Títulos principales */
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2.5em; /* Define un tamaño grande para el título principal */
+    margin-bottom: 10px; /* Agrega espacio debajo del título */
 }
 
 h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 1.5em; /* Establece un tamaño de fuente moderado para el subtítulo */
+    margin-bottom: 20px; /* Agrega espacio debajo del subtítulo */
 }
 
 /* Estilo para la sección del tiempo */
 .countdown {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
+    display: flex; /* Utiliza flexbox para organizar las cajas de tiempo */
+    gap: 20px; /* Espacio entre las cajas de tiempo */
+    justify-content: center; /* Centra las cajas dentro del contenedor */
+    margin-top: 20px; /* Agrega espacio encima del contenedor de tiempo */
 }
 
 /* Cajas individuales de tiempo */
 .time-box {
-    background: #333;
-    border-radius: 10px;
-    padding: 15px 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: #333; /* Fondo oscuro para las cajas */
+    border-radius: 10px; /* Redondea las esquinas de las cajas */
+    padding: 15px 25px; /* Espacio interno horizontal y vertical */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para un 
+    efecto tridimensional */
 }
 
 /* Número de tiempo */
 .time-box span {
-    font-size: 2.5em;
-    font-weight: bold;
-    display: block;
+    font-size: 2.5em; /* Tamaño grande para los números */
+    font-weight: bold; /* Números en negrita */
+    display: block; /* Asegura que el número ocupe toda la línea */
 }
 
 /* Etiqueta de tiempo */
 .time-box p {
-    font-size: 1em;
-    margin-top: 5px;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-size: 1em; /* Tamaño estándar para las etiquetas */
+    margin-top: 5px; /* Espacio encima de la etiqueta */
+    font-weight: 300; /* Fuente ligera para diferenciarla de los números */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
 }
 
 /* Efecto hover */
 .time-box:hover {
-    background: #555;
-    transition: background 0.3s ease;
+    background: #555; /* Cambia el fondo al pasar el cursor */
+    transition: background 0.3s ease; /* Transición suave en el 
+    cambio de fondo */
 }

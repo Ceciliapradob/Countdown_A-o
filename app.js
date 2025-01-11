@@ -5,8 +5,10 @@ const hoursElement = document.getElementById('hours');
 const minutesElement = document.getElementById('minutes');
 const secondsElement = document.getElementById('seconds');
 
-// 🎯 Definimos la fecha objetivo para el countdown, el 1 de enero de 2026 a las 00:00:00.
-// 'getTime()' convierte esta fecha en milisegundos desde el 1 de enero de 1970 (Epoch Unix).
+// 🎯 Definimos la fecha objetivo para el countdown, el 1 de 
+// enero de 2026 a las 00:00:00.
+// 'getTime()' convierte esta fecha en milisegundos desde 
+// el 1 de enero de 1970 (Epoch Unix).
 const targetDate = new Date('January 1, 2026 00:00:00').getTime();
 
 // 🕒 Función principal que actualiza el countdown
@@ -14,7 +16,8 @@ function updateCountdown() {
     // 🗓️ Obtenemos la fecha y hora actual en milisegundos
     const now = new Date().getTime();
     
-    // 🧮 Calculamos la diferencia entre la fecha objetivo y la fecha actual
+    // 🧮 Calculamos la diferencia entre la fecha objetivo
+    //  y la fecha actual
     const difference = targetDate - now;
 
     // 📅 Cálculo de días restantes
